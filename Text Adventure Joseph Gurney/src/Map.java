@@ -1,11 +1,10 @@
 
 public class Map {
 
-	private int[][] grid = new int[10][10];
 	private int treasurexLoc;
 	private int treasureyLoc;
 	private int playerxPos = 4;
-	private int playeryPos =4;
+	private int playeryPos = 4;
 	private int trapx;
 	private int trapy;
 
@@ -14,40 +13,44 @@ public class Map {
 		this.setTreasureyLoc(yloc);
 		this.setTrapx(trapx);
 		this.setTrapy(trapy);
-		this.grid[xloc][yloc] = 999;
 	}
-	
+
+	public void addTraps(int trapx, int trapy) {
+
+	}
+
 	public int getTrapy() {
 		return trapy;
 	}
-	
+
 	public void setTrapy(int trapy) {
 		this.trapy = trapy;
 	}
-	
+
 	public void setTrapx(int trapx) {
 		this.trapx = trapx;
 	}
-	
+
 	public int getTrapx() {
 		return trapx;
 	}
-	
+
 	public void setPlayerxPos(int playerxPos) {
 		this.playerxPos = playerxPos;
 	}
-	
+
 	public int getPlayerxPos() {
 		return playerxPos;
 	}
-	
+
 	public void setPlayeryPos(int playeryPos) {
 		this.playeryPos = playeryPos;
 	}
-	
+
 	public int getPlayeryPos() {
 		return playeryPos;
 	}
+
 	public int getTreasurexLoc() {
 		return treasurexLoc;
 	}
